@@ -1,0 +1,60 @@
+/*
+Especific styles
+*/
+
+
+h2 {
+  font-family: 'Poppins';
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-weight: normal;
+  background-image: linear-gradient(to right, #e5ffd7, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: bold;
+  color: #ffffff;
+  background-size: 130%;
+  background-clip: text;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h4{
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
+small{
+  font-family: 'Raleway';
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+p {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+a {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}

@@ -1,0 +1,27 @@
+.video-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+  }
+  
+  .video-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .video-element {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+  }
+  
+  .video-error {
+    font-size: 1.2rem;
+    color: red;
+  }
+  

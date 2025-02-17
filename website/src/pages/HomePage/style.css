@@ -1,0 +1,170 @@
+/* Container for the entire page */
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 5%;
+  padding-bottom: 10%;
+  color: white;
+  height: 210svh;
+  justify-content: space-between;
+
+}
+
+/* VIDEO PLAYER */
+.background-home-video {
+  position: absolute;
+  left: 0% ;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  filter: grayscale(10%); /* Grey out effect */
+
+}
+
+.video-player {
+  object-fit: cover;
+  width: 100svw;
+  height: 100svh;
+  top: 0;
+  left: 0;
+  filter: brightness(0.35);  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+
+/* Header styling (Logo + Intro text) */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  max-width: 50%;
+}
+
+.text-header{
+  font-family: 'Poppins';
+  font-size: 3.2rem;
+  font-weight: bold;
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 2%;
+}
+
+/* Styling for the percentage row */
+.percentages-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The block that contains the percentage */
+.percentage {
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentage-number {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.percentage-text {
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+/* Team member row styling */
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.team-member {
+  text-align: center;
+  width: 30%;
+}
+
+.team-member-img {
+  width: 150px;  /* Set a fixed width */
+  height: 150px; /* Make height equal to width */
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+
+.team-member-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.team-member-position {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.team-member-link {
+  color: #8afa22;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.floating-button {
+  position: fixed;
+  z-index: 2;
+  bottom: 8%;
+  width: 20%;
+  left: 40%;
+  background: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+  backdrop-filter: blur(12px); /* Glass effect */
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 40px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 40px; /* Rounded rectangle */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: glow 3s infinite alternate ease-in-out;
+}
+
+/* Glowing Effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+/* Hover Effect */
+.floating-button:hover {
+  transform: translateX(-50%) scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
